@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hasyim.konversisuhu.MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="KONVERSI SUHU"
+        android:textStyle="bold"
+        android:textColor="#303F9F"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka"
+        android:layout_below="@id/judul"
+        android:id="@+id/angka"
+        android:textColor="#303F9F"
+        android:inputType="number"
+        android:paddingTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/angka"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#303F9F"
+        android:layout_marginRight="20dp"
+        android:entries="@array/suhu"/>
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:text="Hitung"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnHapus"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnHitung"
+        android:layout_alignBottom="@+id/btnHitung"
+        android:layout_alignEnd="@+id/etHasil"
+        android:layout_alignRight="@+id/etHasil"
+        android:background="@color/colorPrimary"
+        android:text="Hapus"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/etHasil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnHapus"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="#303F9F"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

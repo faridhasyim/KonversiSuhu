@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Konversi Suhu</string>
+
+    <string-array name="suhu">
+        <item>Celcius ---> Reamur</item>
+        <item>Celcius ---> Fahrenheit</item>
+        <item>Celcius ---> Kelvin</item>
+        <item>Reamur ---> Celcius</item>
+        <item>Reamur ---> Fahrenheit</item>
+        <item>Reamur ---> Kelvin</item>
+        <item>Fahrenheit ---> Celcius</item>
+        <item>Fahrenheit ---> Reamur</item>
+        <item>Fahrenheit ---> Kelvin</item>
+        <item>Kelvin ---> Celcius</item>
+        <item>Kelvin ---> Reamur</item>
+        <item>Kelvin ---> Fahrenheit</item>
+    </string-array>
+</resources>
